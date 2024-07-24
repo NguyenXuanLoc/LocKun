@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Swayme(staging)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>base_bloc</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>app.swayme.pl</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>swayme.pl</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FLTEnableImpeller</key>
+	<false/>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
+	<false/>
+	<key>FacebookAppID</key>
+	<string>354337667062264</string>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<false/>
+	<key>FacebookClientToken</key>
+	<string>d414284fe7f683725d4e4c1c22a7172e</string>
+	<key>FacebookDisplayName</key>
+	<string>Sway me</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram</string>
+		<string>comgooglemaps</string>
+	    <string>comgooglemapsurl</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string></string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to scan barcodes</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Dane o lokalizacji użytkownika są wykorzystywane w celu odebrania oferty w pobliżu</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>User location data is used to pick up nearby offers</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Example usage description</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

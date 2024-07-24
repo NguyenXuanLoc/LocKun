@@ -1,0 +1,69 @@
+{
+  "code": 0,
+  "message": "OK_EN",
+  "data": {
+    "id": 61,
+    "product_id": 56,
+    "state": 1,
+    "type": "POST",
+    "discount_number": 10,
+    "discount_type": "percent",
+    "count": 10,
+    "expired_time": 24,
+    "voucher_image": "qr_code_61.png",
+    "created_at": "2024-01-10T08:28:15.332958Z",
+    "rules": [
+      {
+        "id": 86,
+        "provider_id": 29,
+        "name": "Step 1",
+        "description": "Follow us on Instagram - by searching nhahang.denui.manhhanh",
+        "social_type": "Instagram",
+        "step_number": 1,
+        "created_at": "2024-01-10T08:29:10.922565Z",
+        "updated_at_at": "2024-01-10T08:29:10.922565Z",
+        "DealRules": null
+      },
+      {
+        "id": 87,
+        "provider_id": 29,
+        "name": "Step 2",
+        "description": "Like our latest post so that we can know about you're not a robot",
+        "social_type": "Instagram",
+        "step_number": 2,
+        "created_at": "2024-01-10T08:30:06.249879Z",
+        "updated_at_at": "2024-01-10T08:30:06.249879Z",
+        "DealRules": null
+      },
+      {
+        "id": 88,
+        "provider_id": 29,
+        "name": "Step 3",
+        "description": "Post your photos or video in our restaurant. Welcome!",
+        "social_type": "Instagram",
+        "step_number": 3,
+        "created_at": "2024-01-10T08:30:57.014265Z",
+        "updated_at_at": "2024-01-10T08:30:57.014265Z",
+        "DealRules": null
+      },
+      {
+        "id": 89,
+        "provider_id": 29,
+        "name": "Step 4",
+        "description": "Be patient till we finish verifying your post",
+        "social_type": "Instagram",
+        "step_number": 4,
+        "created_at": "2024-01-10T08:31:57.850369Z",
+        "updated_at_at": "2024-01-10T08:31:57.850369Z",
+        "DealRules": null
+      }
+    ],
+    "provider": {
+      "id": 61,
+      "category_id": 0,
+      "name": "Nhà Hàng Dê Núi Đông Giang",
+      "instagram_name": "nhahang.denui.manhhanh",
+      "other_media": ""
+    }
+  }
+}

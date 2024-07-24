@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Gratulacje! Twoja współpraca została zaakceptowana.",
+    "dealId": 20,
+    "iconUrl": "https://i.imgur.com/xFmqRBm.png",
+    "notificationId": 214,
+    "notificationTypeId": 8,
+    "providerAvatarUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1b/66/f6/22/enzo-saccomani-and-his.jpg",
+    "redeemId": 405,
+    "sent": true,
+    "title": "Story zaakceptowane",
+    "userId": 76767
+  },
+  {
+    "content": "Masz 24 godziny na wstawienie story.",
+    "dealId": 20,
+    "iconUrl": "https://i.imgur.com/uMBH5jz.png",
+    "notificationId": 212,
+    "notificationTypeId": 4,
+    "providerAvatarUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1b/66/f6/22/enzo-saccomani-and-his.jpg",
+    "redeemId": 405,
+    "sent": true,
+    "title": "Wrzuć swoje story!",
+    "userId": 76767
+  },
+  {
+    "content": "Nieprawidłowe story. Wstaw nowe w przeciągu 12 godzin.",
+    "dealId": 20,
+    "iconUrl": "https://i.imgur.com/jyBP743.png",
+    "notificationId": 216,
+    "notificationTypeId": 5,
+    "providerAvatarUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1b/66/f6/22/enzo-saccomani-and-his.jpg",
+    "redeemId": 405,
+    "sent": true,
+    "title": "Nieprawidłowe story",
+    "userId": 76767
+  },
+  {
+    "content": "Zostałeś zablokowany, nie opublikowałeś story na czas.",
+    "dealId": 20,
+    "iconUrl": "https://i.imgur.com/v3aGtWL.png",
+    "notificationId": 215,
+    "notificationTypeId": 6,
+    "providerAvatarUrl": "https://media-cdn.tripadvisor.com/media/photo-s/1b/66/f6/22/enzo-saccomani-and-his.jpg",
+    "redeemId": 405,
+    "sent": true,
+    "title": "Jaka szkoda!",
+    "userId": 76767
+  }
+]

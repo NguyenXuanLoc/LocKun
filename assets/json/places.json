@@ -1,0 +1,479 @@
+{
+  "total": {
+    "value": 17,
+    "relation": "eq"
+  },
+  "max_score": null,
+  "hits": [
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "22",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 22,
+          "category_id": 1,
+          "name": "Pracownia Sushi Wola",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-s/14/c3/4b/7c/tort-sushi.jpg",
+          "house_number": "98-666",
+          "street": "Kolejowa 45",
+          "phone_number": "",
+          "location": "52.225780,20.981182",
+          "instagram_name": "pracowniasushiwola",
+          "description": "ak,to My od rolki Gratis/Extra i od Warsaw. Obserwuj nas | Zapnij pasy | Otwórz oczy.",
+          "other_media": "",
+          "created_at": "2023-10-26T03:11:30.248633Z",
+          "updated_at": "2023-10-26T03:11:30.248633Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758305,
+        "transaction": null
+      },
+      "sort": [
+        211.3060480858912
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "38",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 38,
+          "category_id": 3,
+          "name": "Crowne Plaza Warsaw - The HUB",
+          "poster": "",
+          "avatar": "https://warsawnow.pl/wp-content/uploads/2021/05/The-Roof-Skybar-Warszawa.jpg",
+          "house_number": "02-843",
+          "street": "rondo Daszyńskiego 2, Warszawa.",
+          "phone_number": "",
+          "location": "52.229768,20.983833",
+          "instagram_name": "crowneplazawarsawthehub",
+          "description": "First Crowne Plaza in Poland. Conveniently located, this modern hotel is perfect whether you travel on business or pleasure.",
+          "other_media": "",
+          "created_at": "2023-10-27T07:22:36.426012Z",
+          "updated_at": "2023-10-27T07:22:36.426012Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "last",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758315,
+        "transaction": null
+      },
+      "sort": [
+        211.58483651134785
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "10",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 10,
+          "category_id": 1,
+          "name": "Test2",
+          "poster": "",
+          "avatar": "https://data.voz.vn/avatars/m/413/413080.jpg?1685242456",
+          "house_number": "02-018 Warsaw, Poland",
+          "street": "02-018 Warsaw, Poland",
+          "phone_number": "",
+          "location": "52.223677,20.989055",
+          "instagram_name": "Millennium",
+          "description": "description",
+          "other_media": "Whatapps,....",
+          "created_at": "2023-10-25T09:23:18.190128Z",
+          "updated_at": "2023-10-25T09:23:18.190128Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "first",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758304,
+        "transaction": null
+      },
+      "sort": [
+        211.77380633527483
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "23",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 23,
+          "category_id": 2,
+          "name": "Baila Show & Dining",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-s/1e/a2/a6/b6/join-our-magical-world.jpg",
+          "house_number": "22-245",
+          "street": "Grzybowska 60 Browary Warszawskie",
+          "phone_number": "",
+          "location": "52.234420,20.987219",
+          "instagram_name": "bailawarsaw",
+          "description": "Restauracja & Shisha od poniedzialku do piątku!",
+          "other_media": "",
+          "created_at": "2023-10-26T03:11:30.742178Z",
+          "updated_at": "2023-10-26T03:11:30.742178Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758306,
+        "transaction": null
+      },
+      "sort": [
+        211.9303365391225
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "24",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 24,
+          "category_id": 1,
+          "name": "Tutti Santi Warszawa",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-s/1b/a6/a4/85/nasze-menu.jpg",
+          "house_number": "005-12",
+          "street": "ul. Królewska 18 Dodatkowy parking na ulicy Grzybowskiej",
+          "phone_number": "",
+          "location": "52.237576,21.004267",
+          "instagram_name": "pizza",
+          "description": "Support Your Local Pizzeria",
+          "other_media": "",
+          "created_at": "2023-10-26T03:11:31.651412Z",
+          "updated_at": "2023-10-26T03:11:31.651412Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758306,
+        "transaction": null
+      },
+      "sort": [
+        213.141258145889
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "35",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 35,
+          "category_id": 3,
+          "name": "Culiinaria Italiana",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-s/29/24/82/f5/carbonara.jpg",
+          "house_number": "00-682 ",
+          "street": "62 Hoża St. Lok. 5",
+          "phone_number": "",
+          "location": "52.225586,21.010800",
+          "instagram_name": "culiinariaitaliana",
+          "description": "Traditional Italian Cuisine,as simple as that",
+          "other_media": "",
+          "created_at": "2023-10-26T03:12:09.425113Z",
+          "updated_at": "2023-10-26T03:12:09.425113Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758313,
+        "transaction": null
+      },
+      "sort": [
+        213.26411888851342
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "36",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 36,
+          "category_id": 1,
+          "name": "La Luce Restaurant",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-p/24/e8/fb/66/la-luce.jpg",
+          "house_number": "00-869 ",
+          "street": "Poznańska, 37",
+          "phone_number": "",
+          "location": "52.228920,21.009750",
+          "instagram_name": "laluce.restaurant",
+          "description": "The surprise comes with the bill. They include Service fee without any further notice anywhere on the menu or informing upfront - so greedy and bad! ",
+          "other_media": "",
+          "created_at": "2023-10-26T03:12:38.988865Z",
+          "updated_at": "2023-10-26T03:12:38.988865Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758313,
+        "transaction": null
+      },
+      "sort": [
+        213.27980697346584
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "37",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 37,
+          "category_id": 1,
+          "name": "La Luce Restauranttest",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-p/24/e8/fb/66/la-luce.jpg",
+          "house_number": "00-869 ",
+          "street": "Poznańska, 37",
+          "phone_number": "",
+          "location": "52.228920,21.009750",
+          "instagram_name": "laluce.restaurant",
+          "description": "The surprise comes with the bill. They include Service fee without any further notice anywhere on the menu or informing upfront - so greedy and bad! ",
+          "other_media": "",
+          "created_at": "2023-10-26T09:18:42.912679Z",
+          "updated_at": "2023-10-26T09:18:42.912679Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758313,
+        "transaction": null
+      },
+      "sort": [
+        213.27980697346584
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "30",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 30,
+          "category_id": 2,
+          "name": "Green Caffe Nero",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-s/0f/2f/bc/7d/pleasant.jpg",
+          "house_number": "00-614",
+          "street": "Ul. Marszalkowska 84/92",
+          "phone_number": "",
+          "location": "52.228710,21.012615",
+          "instagram_name": "greencaffenero_",
+          "description": "#5 of 154 Coffee & Tea in Warsaw",
+          "other_media": "",
+          "created_at": "2023-10-26T03:11:35.030003Z",
+          "updated_at": "2023-10-26T03:11:35.030003Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758308,
+        "transaction": null
+      },
+      "sort": [
+        213.46428466055292
+      ]
+    },
+    {
+      "_index": "swayme_provider.public.provider_sync",
+      "_type": "_doc",
+      "_id": "31",
+      "_score": null,
+      "_source": {
+        "before": null,
+        "after": {
+          "id": 31,
+          "category_id": 3,
+          "name": "Cafe Mozaika",
+          "poster": "",
+          "avatar": "https://media-cdn.tripadvisor.com/media/photo-f/11/12/1a/0a/bezglutenowa-pysznosc.jpg",
+          "house_number": "02-789",
+          "street": "ul. Puławska 53 przy Parku Morskie Oko",
+          "phone_number": "",
+          "location": "52.204475,21.023550",
+          "instagram_name": "cafemozaika",
+          "description": "The food, particularly the main course is absolutely delicious.",
+          "other_media": "",
+          "created_at": "2023-10-26T03:11:35.514762Z",
+          "updated_at": "2023-10-26T03:11:35.514762Z",
+          "lat_location": null,
+          "lon_location": null
+        },
+        "source": {
+          "version": "2.3.4.Final",
+          "connector": "postgresql",
+          "name": "swayme_provider",
+          "ts_ms": 1698654758238,
+          "snapshot": "true",
+          "db": "swayme_provider",
+          "sequence": "[null,\"66273920\"]",
+          "schema": "public",
+          "table": "provider_sync",
+          "txId": 1390,
+          "lsn": 66273920,
+          "xmin": null
+        },
+        "op": "r",
+        "ts_ms": 1698654758309,
+        "transaction": null
+      },
+      "sort": [
+        213.5863072635672
+      ]
+    }
+  ]
+}

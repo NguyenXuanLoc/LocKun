@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "196505369658",
+    "project_id": "swayme-8dfd1",
+    "storage_bucket": "swayme-8dfd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196505369658:android:c094557fff0c918d9ac903",
+        "android_client_info": {
+          "package_name": "app.swayme.pl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196505369658-bf9d52np3pjnh20la5qo52n5r68r7j7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEe19rKaithuS2aZZ_uFkFrUwwxhOYRJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196505369658-bf9d52np3pjnh20la5qo52n5r68r7j7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "196505369658-9bmg2uqodeu19c87tte040jmijjl2r9o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.swayme"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196505369658:android:414021592527c2539ac903",
+        "android_client_info": {
+          "package_name": "com.app.swayme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196505369658-am0ccl28ia6mm7dehvv35pmdnans0nrc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.swayme",
+            "certificate_hash": "e9c7e07eee4ee5d3842e80364438870c2ee029f1"
+          }
+        },
+        {
+          "client_id": "196505369658-bf9d52np3pjnh20la5qo52n5r68r7j7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEe19rKaithuS2aZZ_uFkFrUwwxhOYRJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196505369658-bf9d52np3pjnh20la5qo52n5r68r7j7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "196505369658-9bmg2uqodeu19c87tte040jmijjl2r9o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.swayme"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196505369658:android:c69cecb748d2ef1d9ac903",
+        "android_client_info": {
+          "package_name": "staging.swayme.pl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196505369658-bf9d52np3pjnh20la5qo52n5r68r7j7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEe19rKaithuS2aZZ_uFkFrUwwxhOYRJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196505369658-bf9d52np3pjnh20la5qo52n5r68r7j7n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "196505369658-9bmg2uqodeu19c87tte040jmijjl2r9o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.swayme"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
