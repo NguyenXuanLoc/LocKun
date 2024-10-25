@@ -1,4 +1,4 @@
-package staging.swayme.pl
+package app.vn.vcf
 
 import android.content.Intent
 import android.net.Uri

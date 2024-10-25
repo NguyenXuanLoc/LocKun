@@ -70,7 +70,7 @@ class _AppNotDataWidgetState extends State<AppNotDataWidget> {
             textAlign: TextAlign.center,
             TextSpan(
                 text: getContentMessage(),
-                style: typoSmallTextRegular.copyWith(),
+                style: typoSmallTextRegular.copyWith(color: colorWhite),
                 children: [
                   if (!isInternet) const TextSpan(text: "\n"),
                   if (!isInternet)
@@ -105,7 +105,7 @@ class _AppNotDataWidgetState extends State<AppNotDataWidget> {
                     textAlign: TextAlign.center,
                     TextSpan(
                         text: '${getContentMessage()}\n',
-                        style: typoSmallTextRegular.copyWith(),
+                        style: typoSmallTextRegular.copyWith(color: colorWhite),
                         children: [
                           if (!isInternet)
                             WidgetSpan(

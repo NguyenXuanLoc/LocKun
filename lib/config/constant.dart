@@ -25,6 +25,7 @@ class StorageKey {
   static const timeOpenApp = "time_open_app";
   static const String userAvatar = 'userAvatar';
   static const String qr_code = 'qr_code';
+  static const String data = 'data';
 }
 
 class FirebaseRemoteConfigConstant {

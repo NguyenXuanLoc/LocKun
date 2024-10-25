@@ -127,7 +127,6 @@ class NotificationService {
       FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       print('Got a message !');
       print('onMessage : Message data: ${message.data}');
-      StorageUtils.setNewNotify(true);
       handleNotification(message);
     });
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) async {

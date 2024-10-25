@@ -25,9 +25,9 @@ class BaseService {
   // ignore: non_constant_identifier_names
   Future<ApiResult> GET(String url,
       {Map<String, dynamic>? queryParam,
-        bool isNewFormat = false,
-        bool isToken = true,
-        String baseUrl = ''}) async {
+      bool isNewFormat = false,
+      bool isToken = true,
+      String baseUrl = ''}) async {
     if (await ConnectionUtils.isConnect() == false) {
       return ApiResult(error: LocaleKeys.network_error.tr());
     }
@@ -41,12 +41,16 @@ class BaseService {
         ApiKey.lang: globals.lang
       };
       header['Authorization'] = 'Bearer ${globals.accessToken}';
-      final response = await Dio().get(
-        this.baseUrl + url,
-        queryParameters: queryParam,
-        options: Options(headers: header,
-            sendTimeout: globals.timeOut /*,receiveTimeout: globals.timeOut*/),
-      ).timeout(Duration(seconds: globals.timeOut));
+      final response = await Dio()
+          .get(
+            this.baseUrl + url,
+            queryParameters: queryParam,
+            options: Options(
+                headers: header,
+                sendTimeout:
+                    globals.timeOut /*,receiveTimeout: globals.timeOut*/),
+          )
+          .timeout(Duration(seconds: globals.timeOut));
       Logger().d(response.data);
       if ((response.statusCode == 200 || response.statusCode == 201) &&
           response.data != null) {
@@ -56,8 +60,7 @@ class BaseService {
             statusCode: response.statusCode);
       } else {
         Logger().e(
-            'Error ${response.statusCode} - ${response
-                .statusMessage} - ${response.data}');
+            'Error ${response.statusCode} - ${response.statusMessage} - ${response.data}');
         var result = response.data;
         return ApiResult<dynamic>(
           error: result["meta"]["message"] ?? response.statusMessage ?? '',
@@ -88,17 +91,18 @@ class BaseService {
                     (exception.response?.data['message'] as String).isNotEmpty
                 ? exception.response?.data['message']
                 : exception.response?.data['meta']?['message'] != null &&
-                (exception.response?.data['meta']?['message'] as String)
-                    .isNotEmpty
-                ? exception.response?.data['meta']['message']
-                : exception.response?.data['error'] ??
-                LocaleKeys.network_error.tr());
+                        (exception.response?.data['meta']?['message'] as String)
+                            .isNotEmpty
+                    ? exception.response?.data['meta']['message']
+                    : exception.response?.data['error'] ??
+                        LocaleKeys.network_error.tr());
       } catch (ex) {
         return ApiResult(error: LocaleKeys.network_error.tr());
       }
     } catch (error) {
       Logger().e('[ERROR] ' + error.toString());
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       return ApiResult<dynamic>(error: LocaleKeys.network_error.tr());
     }
   }
@@ -114,17 +118,20 @@ class BaseService {
     debugPrint("Language ${globals.lang}");
 
     try {
-      final response = await Dio().patch(
-        url,
-        data: body,
+      final response = await Dio()
+          .patch(
+            url,
+            data: body,
             options: Options(
               headers: {
                 'Authorization': 'Bearer ${globals.accessToken}',
                 'Content-Type': 'application/json',
                 ApiKey.lang: globals.lang
               },
-              sendTimeout: globals.timeOut, /* receiveTimeout: globals.timeOut*/),
-      ).timeout(Duration(seconds: globals.timeOut));
+              sendTimeout: globals.timeOut, /* receiveTimeout: globals.timeOut*/
+            ),
+          )
+          .timeout(Duration(seconds: globals.timeOut));
       Logger().d(response.data);
       if ((response.statusCode == 200 || response.statusCode == 201) &&
           response.data != null) {
@@ -135,8 +142,7 @@ class BaseService {
             message: result['meta']['message'] ?? '');
       } else {
         Logger().e(
-            'Error ${response.statusCode} - ${response
-                .statusMessage} - ${response.data}');
+            'Error ${response.statusCode} - ${response.statusMessage} - ${response.data}');
         var result = response.data;
         return ApiResult<dynamic>(
           error: result["meta"]["message"] ?? response.statusMessage ?? '',
@@ -145,7 +151,8 @@ class BaseService {
       }
     } on DioError catch (exception) {
       Logger().e('[EXCEPTION] ${exception.response}');
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       var apiResult = await checkUserExist(exception.response);
       if (apiResult != null) return apiResult;
       var newToken = await checkTokenExpired(exception.response);
@@ -157,14 +164,17 @@ class BaseService {
               LocaleKeys.network_error.tr());
     } catch (error) {
       Logger().e('[ERROR] ' + error.toString());
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       return ApiResult<dynamic>(error: LocaleKeys.network_error.tr());
     }
   }
 
   // ignore: non_constant_identifier_names
   Future<ApiResult> POST(String url, dynamic body,
-      {String baseUrl = '', bool isNewFormat = false, String token = ''}) async {
+      {String baseUrl = '',
+      bool isNewFormat = false,
+      String token = ''}) async {
     if (await ConnectionUtils.isConnect() == false) {
       return ApiResult(error: LocaleKeys.network_error.tr());
     }
@@ -176,18 +186,20 @@ class BaseService {
     try {
       var headers = {
         'Authorization':
-        'Bearer ${token.isNotEmpty ? token : globals.accessToken}',
+            'Bearer ${token.isNotEmpty ? token : globals.accessToken}',
         'Content-Type': 'application/json',
         ApiKey.lang: globals.lang
       };
       final response = await Dio()
           .post(this.baseUrl + url,
-          data: body is FormData ? body : json.encode(body),
-          options: Options(headers: headers,
-            sendTimeout: globals.timeOut, /*receiveTimeout: globals.timeOut*/))
+              data: body is FormData ? body : json.encode(body),
+              options: Options(
+                headers: headers,
+                sendTimeout:
+                    globals.timeOut, /*receiveTimeout: globals.timeOut*/
+              ))
           .timeout(Duration(seconds: globals.timeOut));
-      Logger()
-          .d(response.data);
+      Logger().d(response.data);
       if ((response.statusCode == 200 || response.statusCode == 201) &&
           response.data != null) {
         var result = response.data;
@@ -197,8 +209,7 @@ class BaseService {
             message: result['meta']?['message'] ?? '');
       } else {
         Logger().e(
-            'Error ${response.statusCode} - ${response
-                .statusMessage} - ${response.data}');
+            'Error ${response.statusCode} - ${response.statusMessage} - ${response.data}');
         var result = response.data;
         return ApiResult<dynamic>(
           error: result["meta"]["message"] ?? response.statusMessage ?? '',
@@ -207,7 +218,8 @@ class BaseService {
       }
     } on DioError catch (exception) {
       Logger().e('[EXCEPTION] ${exception.response} ${exception.message}');
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       var apiResult = await checkUserExist(exception.response);
       if (apiResult != null) return apiResult;
       var newToken = await checkTokenExpired(exception.response);
@@ -218,15 +230,16 @@ class BaseService {
             statusCode: exception.response?.statusCode ?? 0,
             error: exception.response?.data != null
                 ? (exception.response?.data['message'] != null &&
-                (exception.response?.data['message'] as String).isNotEmpty
-                ? exception.response?.data['message']
-                : exception.response?.data['meta']?['message'] != null &&
-                (exception.response?.data['meta']?['message']
-                as String)
-                    .isNotEmpty
-                ? exception.response?.data['meta']['message']
-                : exception.response?.data['error'] ??
-                LocaleKeys.network_error.tr())
+                        (exception.response?.data['message'] as String)
+                            .isNotEmpty
+                    ? exception.response?.data['message']
+                    : exception.response?.data['meta']?['message'] != null &&
+                            (exception.response?.data['meta']?['message']
+                                    as String)
+                                .isNotEmpty
+                        ? exception.response?.data['meta']['message']
+                        : exception.response?.data['error'] ??
+                            LocaleKeys.network_error.tr())
                 : LocaleKeys.network_error.tr());
       } catch (ex) {
         return ApiResult(
@@ -235,7 +248,8 @@ class BaseService {
       }
     } catch (error) {
       Logger().e('[ERROR] ' + error.toString());
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       return ApiResult<dynamic>(error: LocaleKeys.network_error.tr());
     }
   }
@@ -250,9 +264,10 @@ class BaseService {
     debugPrint('[PUT] ' + baseUrl! + url);
     debugPrint('[PARAMS] ' + body.toString());
     try {
-      final response = await Dio().put(url,
-          data: body,
-          options: Options(
+      final response = await Dio()
+          .put(url,
+              data: body,
+              options: Options(
                 sendTimeout: globals.timeOut,
                 headers: {
                   'Authorization': 'Bearer ${globals.accessToken}',
@@ -271,8 +286,7 @@ class BaseService {
             message: result['meta']['message'] ?? '');
       } else {
         Logger().e(
-            'Error ${response.statusCode} - ${response
-                .statusMessage} - ${response.data}');
+            'Error ${response.statusCode} - ${response.statusMessage} - ${response.data}');
         var result = response.data;
         return ApiResult<dynamic>(
           error: result["meta"]["message"] ?? response.statusMessage ?? '',
@@ -281,7 +295,8 @@ class BaseService {
       }
     } on DioError catch (exception) {
       Logger().e('[EXCEPTION] ${exception.response}');
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       var apiResult = await checkUserExist(exception.response);
       if (apiResult != null) return apiResult;
       var newToken = await checkTokenExpired(exception.response);
@@ -292,7 +307,8 @@ class BaseService {
               LocaleKeys.network_error.tr());
     } catch (error) {
       Logger().e('[ERROR] ' + error.toString());
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       return ApiResult<dynamic>(error: LocaleKeys.network_error.tr());
     }
   }
@@ -324,8 +340,7 @@ class BaseService {
             message: result['meta']['message'] ?? '');
       } else {
         Logger().e(
-            'Error ${response.statusCode} - ${response
-                .statusMessage} - ${response.data}');
+            'Error ${response.statusCode} - ${response.statusMessage} - ${response.data}');
         var result = response.data;
         return ApiResult<dynamic>(
           error: result["meta"]["message"] ?? response.statusMessage ?? '',
@@ -334,7 +349,8 @@ class BaseService {
       }
     } on DioError catch (exception) {
       Logger().e('[EXCEPTION] ${exception.response}');
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       var apiResult = await checkUserExist(exception.response);
       if (apiResult != null) return apiResult;
       var isNewToken = await checkTokenExpired(exception.response);
@@ -344,7 +360,8 @@ class BaseService {
               LocaleKeys.network_error.tr());
     } catch (error) {
       Logger().e('[ERROR] ' + error.toString());
-      debugPrint('============================================================');
+      debugPrint(
+          '============================================================');
       return ApiResult<dynamic>(error: LocaleKeys.network_error.tr());
     }
   }
@@ -358,7 +375,6 @@ class BaseService {
         globals.isLogin = false;
         var message = response?.data['meta']['message'];
         toast(message);
-        await StorageUtils.logout();
         Utils.fireEvent(OpenNewPageEvent(const HomePage(), isReplace: true));
         return ApiResult(error: '');
       }
@@ -380,7 +396,6 @@ class BaseService {
         } else {
           if (!globals.isTokenExpired) {
             globals.isTokenExpired = true;
-            StorageUtils.logout();
             RouterUtils.pushFromHomeTo(const HomePage(isOpenLoginScreen: true),
                 isReplace: true);
             return false;
@@ -404,11 +419,6 @@ class BaseService {
       if (response.error == null) {
         var token = response.data['token'] ?? '';
         if (token.isEmpty) return false;
-        var userModel = await StorageUtils.getUser();
-        if (userModel != null) {
-          StorageUtils.saveLogin(userModel.copyOf(token: token));
-          isResult = true;
-        }
       }
     } catch (ex) {}
     return isResult;

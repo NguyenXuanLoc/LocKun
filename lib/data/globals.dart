@@ -1,6 +1,5 @@
 library app.globals;
 
-import 'package:base_bloc/data/model/user_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -12,9 +11,8 @@ String refreshToken = '';
 String lang = '';
 String deviceId = '';
 String deviceName = '';
-int userId =0;
+int userId = 0;
 String deviceModel = '';
-UserModel? userModel;
 BuildContext? homeContext;
 bool popWithNewAnimation = false;
 bool isQrCode = false;
