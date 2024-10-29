@@ -11,7 +11,7 @@ class PassBloc extends Cubit<PassState> {
   PassBloc() : super(PassState());
 
   void onPassChange(String text, BuildContext context) {
-    if (text.length >= 8 && text != state.pass) {
+    if (text.length >= 10 && text != state.pass) {
       controller.text = '';
       toast("TRY AGAIN");
     }

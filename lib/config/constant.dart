@@ -93,7 +93,7 @@ class ConstantKey {
   static const int A_HOUR = 3600000;
   static const int WARNING_TIME = 120; //minutes warning when deal is prepared ends
   static const system_notification = "system_notification_staging";
-  static const appName = "Swayme(staging)";
+  static const appName = "ROKU_";
   static var BottonNavHeight = Platform.isIOS ? 99.0 : 63.0;
   static const BLANK_HTML = "<html><head></head><body></body></html>";
   static const the_account_verification_may_take_up_to_12h =

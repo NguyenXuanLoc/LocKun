@@ -1,4 +1,4 @@
-package app.vn.vcf
+package lockun.vn.app
 
 import android.content.Intent
 import android.net.Uri

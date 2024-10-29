@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:196505369658:android:c094557fff0c918d9ac903",
         "android_client_info": {
-          "package_name": "app.vn.vcf"
+          "package_name": "lockun.vn.app"
         }
       },
       "oauth_client": [
@@ -89,7 +89,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:196505369658:android:c69cecb748d2ef1d9ac903",
         "android_client_info": {
-          "package_name": "app.vn.vcf"
+          "package_name": "lockun.vn.app"
         }
       },
       "oauth_client": [

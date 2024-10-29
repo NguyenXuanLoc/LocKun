@@ -22,14 +22,14 @@ class _PassPageState extends BaseState<PassPage, PassBloc> {
     return AppScaffold(
       backgroundColor: Colors.black,
         body: Column(children: [
-      const SizedBox(height: 200),
+      const SizedBox(height: 250),
       CustomKeyBoard(
           onChanged: (s) => bloc.onPassChange(s, context),
           keysTextStyle: typoW700.copyWith(fontSize: 34),
           controller: bloc.controller,
           pinTheme: PinTheme(keysColor: Colors.white),
-          maxLength: 8),
-      const SizedBox(height: 200),
+          maxLength: 10),
+          const SizedBox(height: 250),
     ]));
     // ))
   }

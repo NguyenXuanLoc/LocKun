@@ -18,7 +18,7 @@ class StorageUtils {
     logE("TAG oldValue: $oldValue");
     var newValue = oldValue.replaceAll(key + value, "");
     logE("TAG oldValue: ${key + value}  <<<$newValue");
-    GetStorage().write(StorageKey.data, key);
+    GetStorage().write(StorageKey.data, newValue);
     getAllData();
   }
 
