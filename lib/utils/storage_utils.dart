@@ -25,7 +25,6 @@ class StorageUtils {
   static List<String> getAllData() {
     try {
       String oldValue = GetStorage().read(StorageKey.data) ?? "";
-      logE("TAG oldValue: ${oldValue}");
       return oldValue
           .split(key)
           .where((element) => element != "" && element != " ")

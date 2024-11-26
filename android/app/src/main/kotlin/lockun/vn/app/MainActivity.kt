@@ -5,11 +5,12 @@ import android.net.Uri
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
+import io.flutter.embedding.android.FlutterFragmentActivity
 
 
 
 
-class MainActivity : FlutterActivity() {
+class MainActivity : FlutterFragmentActivity() {
     private val CHANNEL = "plugins.flutter.io/navigator"
     private val OPEN_MAP = "openMap"
     private val OPEN_INSTAGAGRAM = "openInstagram"

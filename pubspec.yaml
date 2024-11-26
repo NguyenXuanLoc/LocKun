@@ -76,6 +76,8 @@ dependencies:
   package_info_plus: 4.2.0
   custom_pin_screen: ^1.0.1
   flutter_swipe_action_cell: any
+  local_auth: any
+
 
 dev_dependencies:
   flutter_facebook_keyhash: ^0.0.4
