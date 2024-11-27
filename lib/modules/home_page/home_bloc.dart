@@ -3,7 +3,11 @@ import 'package:base_bloc/modules/home_page/home_state.dart';
 import 'package:base_bloc/utils/log_utils.dart';
 import 'package:base_bloc/utils/storage_utils.dart';
 import 'package:base_bloc/utils/toast_utils.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+
+import '../../router/router_utils.dart';
+import '../web/web_page.dart';
 
 class HomeBloc extends BaseCubit<HomeState> {
   HomeBloc() : super(HomeState(lContent: List.empty(growable: true))) {
@@ -35,9 +39,8 @@ class HomeBloc extends BaseCubit<HomeState> {
     toast("DELETE SUCCESS");
   }
 
-  void copyBoardOnClick(String value) {
-    Clipboard.setData(ClipboardData(text: value));
-    toast("COPY BOARD SUCCESS");
+  void copyBoardOnClick(String value, BuildContext context) {
+    RouterUtils.pushTo(context, WebPage(url: value));
   }
 
   void getData() {

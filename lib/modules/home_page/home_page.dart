@@ -52,13 +52,12 @@ class _HomePageState extends BaseState<HomePage, HomeBloc> {
                       ? Center(child: AppNotDataWidget(isStack: true))
                       : ListView.separated(
                           itemBuilder: (c, i) => ItemContentWidget(
-                                content: state.lContent[i],
-                                index: i,
-                                deleteOnClick: () =>
-                                    bloc.deleteOnClick(state.lContent[i], i),
-                                copyBoardOnClick: () =>
-                                    bloc.copyBoardOnClick(state.lContent[i]),
-                              ),
+                              content: state.lContent[i],
+                              index: i,
+                              deleteOnClick: () =>
+                                  bloc.deleteOnClick(state.lContent[i], i),
+                              copyBoardOnClick: () => bloc.copyBoardOnClick(
+                                  state.lContent[i], context)),
                           itemCount: state.lContent.length,
                           separatorBuilder: (BuildContext context, int index) =>
                               const SizedBox(height: 10)),

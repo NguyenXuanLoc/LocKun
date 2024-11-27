@@ -1,5 +1,6 @@
 import 'package:base_bloc/modules/home_page/home_page.dart';
 import 'package:base_bloc/modules/pass/pass_state.dart';
+import 'package:base_bloc/modules/web/web_page.dart';
 import 'package:base_bloc/router/router_utils.dart';
 import 'package:base_bloc/utils/log_utils.dart';
 import 'package:base_bloc/utils/toast_utils.dart';
@@ -27,6 +28,13 @@ class PassBloc extends Cubit<PassState> {
       if (isAuth) {
         RouterUtils.pushTo(context, HomePage());
       }
+    }
+  }
+
+  void webViewOnClick(BuildContext context) async {
+    var isAuth = await _authenticateWithBiometrics();
+    if (isAuth) {
+      RouterUtils.pushTo(context, WebPage());
     }
   }
 

@@ -32,7 +32,7 @@ class _PassPageState extends BaseState<PassPage, PassBloc> {
     return AppScaffold(
         backgroundColor: Colors.black,
         body: Column(children: [
-          const SizedBox(height: 250),
+          Spacer(),
           BlocBuilder<PassBloc, PassState>(
               builder: (c, state) => AppText(state.input,
                   style: typoW500.copyWith(color: colorWhite)),
@@ -42,10 +42,18 @@ class _PassPageState extends BaseState<PassPage, PassBloc> {
               keysTextStyle: typoW700.copyWith(fontSize: 34),
               controller: bloc.controller,
               pinTheme: PinTheme(keysColor: Colors.white),
-              maxLength: 10),
-          const SizedBox(height: 250),
+              maxLength: 15),
+          webviewButton(),
+          Spacer(),
         ]));
   }
+
+  Widget webviewButton() => InkWell(
+      onTap: () => bloc.webViewOnClick(context),
+      child: Padding(
+          padding: EdgeInsets.all(10),
+          child:
+              AppText("Nhanh", style: typoW400.copyWith(color: colorWhite))));
 
   @override
   PassBloc createCubit() => PassBloc();
